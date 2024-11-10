@@ -1,0 +1,11 @@
+npm i turbo --global
+npx create-turbo@latest
+
+cd apps
+npm i -g@nestjs/cli
+
+nest new api
+api =>  "dev": "nest start --watch",
+main.ts =>   await app.listen(process.env.PORT ?? 8000);
+
+npm run dev
