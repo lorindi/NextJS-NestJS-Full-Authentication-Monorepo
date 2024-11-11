@@ -9,3 +9,8 @@ api =>  "dev": "nest start --watch",
 main.ts =>   await app.listen(process.env.PORT ?? 8000);
 
 npm run dev
+
+cd apps/api/
+npm i prisma -D
+npx prisma init
+npx prisma db pull
